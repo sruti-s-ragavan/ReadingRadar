@@ -1,8 +1,9 @@
 function initCanvas(){
 	var canvas = $("#radar")[0];
-	
+
 	drawQuadrants(canvas);
 	drawCircles(canvas);
+	renderData(canvas);
 }
 
 function drawQuadrants(canvas){
@@ -37,9 +38,13 @@ function drawCircles (canvas) {
 		context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);	
 		context.stroke();
 	}
-	
 }
 
 $(document).ready(function(){
+	//todo : check if html5 is supported by browser
 	initCanvas();
 });
+
+function renderData	(canvas) {
+	//todo : data render logic
+}
