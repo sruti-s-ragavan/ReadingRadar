@@ -21,6 +21,8 @@ function Radar(renderedOnCanvas) {
 		context.lineTo(width, height/2);
 
 		context.stroke();
+
+		this.drawQuadrantNames();
 	};
 
 	this.drawCircles = function() {
@@ -40,6 +42,10 @@ function Radar(renderedOnCanvas) {
 	}
 	this.renderData = function(){
 		//todo  : render data logic here
+	}
+
+	this.drawQuadrantNames = function(){
+		
 	}
 
 }
